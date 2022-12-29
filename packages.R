@@ -8,11 +8,11 @@ list.of.packages <- c(
   "kableExtra"
 )
 
-new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
+#new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
 
-if(length(new.packages) > 0){
-  install.packages(new.packages, dep=TRUE)
-}
+# if(length(new.packages) > 0){
+#   install.packages(new.packages, dep=TRUE)
+# }
 
 #loading packages
 for(package.i in list.of.packages){
